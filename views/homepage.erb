@@ -1,11 +1,10 @@
-<h1>Howdy!</h1>
+<h1>Currency pairs</h1>
 
 <ul>
-<% @currencies.keys.each do |symbol| %>
-<li>
-<a href="<%= symbol %>">Convert 1 <%= symbol %>...</a>
-</li>
-
-
+  <% @currencies.keys.each do |symbol| %>
+    <li>
+      <a href="/<%= symbol %>"><%= symbol %></a>
+    </li>
   <% end %>
 </ul>
+
