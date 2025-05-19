@@ -1,2 +1,11 @@
 <h1>Howdy!</h1>
-<%= @raw_response%>
+
+<ul>
+<% @currencies.keys.each do |symbol| %>
+<li>
+<a href="<%= symbol %>">Convert 1 <%= symbol %>...</a>
+</li>
+
+
+  <% end %>
+</ul>
